@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class NewsItem extends Component {
     
     render() {
-        let {title, description, imgUrl, newsUrl} = this.props;
+        let {title, description, imgUrl, newsUrl, author, date} = this.props;
         return (
             <div>
                 <div className="card" style={{width: "23rem"}}>
@@ -11,7 +11,8 @@ export class NewsItem extends Component {
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text">{description}</p>
-                        <a target="_blank" href={newsUrl} className="btn btn-sm btn-primary">Read more</a>
+                        <p className="card-text" ><small className="text-muted">By Author {author ? author : "unknown"} on {new Date(date).toGMTString()}</small></p>
+                        <a target="_blank" href={newsUrl} className="btn btn-sm btn-warning">Read more</a>
                     </div>
                 </div>
             </div>
