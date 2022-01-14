@@ -59,5 +59,3 @@ export default class App extends Component {
         )
     }
 }
-
-// API KEY :- b40c4fe877b844649b3704eba04391a4
