@@ -8,12 +8,12 @@ export class navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container-fluid">
-                        <img src={logo} alt="" style={{width:"50px",height:"50px", cursor:"pointer"}}/>
+                        <img src={logo} alt="" style={{width:"50px",height:"50px", borderRadius:"15px"}}/>
                         {/* <Link className="navbar-brand" to="/">NewsMonkey</Link> */}
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul className="navbar-nav">
                                 <li className="nav-item">
                                     <Link className="nav-link active" aria-current="page" to="/">Top Headlines</Link>
                                 </li>
