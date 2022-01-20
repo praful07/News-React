@@ -9,6 +9,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import LoadingBar from 'react-top-loading-bar'
+
 export default class App extends Component {
     state = {
         progress : 0
